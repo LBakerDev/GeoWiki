@@ -1,0 +1,129 @@
+.jumbtron{
+    text-align: center;
+    margin-top: -65px;
+    background-color: #b7b4b4;
+    padding-top: 0px;
+}
+
+body{
+    text-rendering: optimizeLegibility;
+}
+
+.active{
+    text-align: left;
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #efecec;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #0e0e0e;
+}
+
+.navbar-default{
+    height: 70px;
+}
+
+.navbar-brand{
+    font-size: 36px;
+}
+
+.navbar-default .navbar-brand{
+    color: white;
+}
+
+.container-fluid{
+    background-color: black;
+}
+
+.container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid gray;
+}
+
+p{
+    font-size: 25px;
+    margin: 30px 0 10px;
+    padding-bottom: 1%;
+    padding-left:1%;
+}
+
+#p2{
+    margin-bottom: 20px;
+    margin-top: -73px;
+    padding-bottom: 40px;
+}
+
+.img-responsive{
+    margin-right: 20px;
+    margin-top: 6px;
+    float: right;
+    width: 62px;
+}
+
+h1{
+    font-size: 65px;
+}
+
+#btn1{
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+#btn1:hover {
+    background: #ff7b29;
+    transition-property: background;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    }
+
+#secondChoice{
+    margin-top: 10px;
+}
+
+#tweet {
+    display: inline-grid;
+    margin-top:30px;
+}
+
+input {
+  width:80%;
+}
+
+a { color: inherit; 
+} 
+
+div {
+  border-radius:25px;
+}
+
+.liResults {
+  margin-top:1%;
+  border-radius:25px;
+      min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #ecf0f1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+}
