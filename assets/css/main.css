@@ -1,6 +1,6 @@
 .jumbtron{
     text-align: center;
-    margin-top: -65px;
+    margin-top: -95px;
     background-color: #1C25B2;
     padding-top: 0px;
     color: white;
@@ -13,6 +13,13 @@ body{
 .active{
     text-align: left;
     color: white;
+}
+.navbar {
+    border: none!important;
+}
+
+.navbar-header{
+    margin-top:6px;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -49,8 +56,12 @@ body{
     text-align: center;
     margin-top: 100px;
     padding-bottom: 15px;
-    border-bottom: 2px solid gray;
 }
+
+.container.controls {
+     border-bottom: 2px solid gray;
+     border-radius: 10px;
+} 
 
 p{
     font-size: 25px;
@@ -68,6 +79,7 @@ p{
 .img-responsive{
     margin-right: 20px;
     margin-top: 6px;
+    margin-bottom: 10px;
     float: right;
     width: 62px;
 }
@@ -117,10 +129,6 @@ input {
 a { color: inherit; 
 } 
 
-div {
-  border-radius:25px;
-}
-
 .liResults {
   margin-top:1%;
   border-radius:25px;
@@ -132,4 +140,14 @@ div {
     border-radius: 4px;
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
     box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+}
+#results{
+    display:none;
+}
+
+@media screen and (max-width: 770px) {
+    .img-responsive {
+        display:none;
+    }
+
 }

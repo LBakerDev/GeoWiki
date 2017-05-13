@@ -15,6 +15,8 @@ $(document).ready(function () {
     //find users current location
     $("#btn1").on("click", function (e) {
         //e.preventDefault();
+        $("#searchTerm").val("")
+        $('#results').fadeOut();
         $("#clearBtn").show();
         
         var url = search_url(area1);
@@ -33,6 +35,8 @@ $(document).ready(function () {
                  "</h2><p>" + data[2][i] + "</p></a></div></div>");
             }
             $("#results").html(resultElement);
+            $("#results").fadeIn();
+            
             },
             error: function (errorMessage) {
             }
@@ -40,6 +44,7 @@ $(document).ready(function () {
     });
     //find user location based on user entry
     $("#proceedBtn").on("click", function (e) {
+        $('#results').fadeOut();
         e.preventDefault();
         if($("#searchTerm").val()=="") {
             alert("Please enter a location");
@@ -63,17 +68,18 @@ $(document).ready(function () {
                  "</h2><p>" + data[2][i] + "</p></a></div></div>");
             }
             $("#results").html(resultElement);
+            $("#results").fadeIn();            
             },
             error: function (errorMessage) {
             }
         });
-        $("#clearBtn").show();
+        $("#clearBtn").fadeIn();
     });
 
     //clear results and remove clear button
     $("#clearBtn").on("click", function () {
-        $(".liResults").remove();
         $("#clearBtn").fadeOut();
+        $("#results").fadeOut();
 
     })
 });
