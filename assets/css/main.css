@@ -150,4 +150,8 @@ a { color: inherit;
         display:none;
     }
 
+    .navbar{
+        display: none
+    }
+
 }
