@@ -1,8 +1,9 @@
 .jumbtron{
     text-align: center;
     margin-top: -65px;
-    background-color: #b7b4b4;
+    background-color: #5200FF;
     padding-top: 0px;
+    color: white;
 }
 
 body{
@@ -82,14 +83,14 @@ h1{
   cursor: pointer;
   outline: none;
   color: #fff;
-  background-color: #4CAF50;
+  background-color: #58CC14;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
 }
 
 #btn1:hover {
-    background: #ff7b29;
+    background: #ff5b19;
     transition-property: background;
     transition-duration: 0.5s;
     transition-timing-function: linear;
@@ -97,6 +98,11 @@ h1{
 
 #secondChoice{
     margin-top: 10px;
+}
+
+#searchTerm:focus{ 
+    border: 3px solid #555;
+
 }
 
 #tweet {
