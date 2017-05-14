@@ -44,6 +44,7 @@ $(document).ready(function () {
     });
     //find user location based on user entry
     $("#proceedBtn").on("click", function (e) {
+        
         $('#results').fadeOut();
         e.preventDefault();
         if($("#searchTerm").val()=="") {

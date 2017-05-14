@@ -2,12 +2,13 @@
     text-align: center;
     margin-top: -95px;
     background-color: #1C25B2;
-    padding-top: 0px;
+    padding-top: 1px;
     color: white;
 }
 
 body{
     text-rendering: optimizeLegibility;
+    font-family: futura;
 }
 
 .active{
@@ -28,7 +29,7 @@ body{
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
     color: #fff;
-    background-color: #0e0e0e;
+    background-color: #7f7e86;
 }
 
 .navbar-default{
@@ -44,7 +45,7 @@ body{
 }
 
 .container-fluid{
-    background-color: black;
+    background-color: #7f7e86;
 }
 
 .container{
