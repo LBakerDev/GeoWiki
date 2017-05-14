@@ -87,4 +87,10 @@ $(document).ready(function () {
         $(".jumbotron").fadeIn();
 
     })
+
+    $("#home").on("click", function () {
+        $("#results").fadeOut();
+        $(".jumbotron").fadeIn();
+        $("#searchTerm").val("")
+    })
 });
