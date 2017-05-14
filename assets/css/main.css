@@ -1,7 +1,7 @@
-.jumbtron{
+.jumbotron{
     text-align: center;
     margin-top: -95px;
-    /*background-color: #1C25B2;*/
+    background-color: #1C25B2;
     padding-top: 1px;
     color: white;
 }
@@ -9,10 +9,10 @@
 body{
     text-rendering: optimizeLegibility;
     font-family: futura;
-    background: #c02425; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #c02425, #f0cb35);
-  background: linear-gradient(to right, #c02425, #f0cb35);
+
 }
+
+
 
 .active{
     text-align: left;
@@ -31,8 +31,8 @@ body{
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: black;
-    background-color:white;
+    color: #fff;
+    background-color: #7f7e86;
 }
 
 .navbar-default{
@@ -44,11 +44,11 @@ body{
 }
 
 .navbar-default .navbar-brand{
-    color: black
+    color: white;
 }
 
 .container-fluid{
-    background-color:white;
+    background-color: #7f7e86;
 }
 
 .container{
@@ -63,7 +63,7 @@ body{
 }
 
 .container.controls {
-     /*border-bottom: 2px solid gray;*/
+     border-bottom: 2px solid gray;
      border-radius: 10px;
 } 
 
@@ -159,3 +159,4 @@ a { color: inherit;
     }
 
 }
+

@@ -15,7 +15,9 @@ $(document).ready(function () {
     //find users current location
     $("#btn1").on("click", function (e) {
         //e.preventDefault();
+        $(".jumbotron").fadeOut();
         $("#searchTerm").val("")
+        //clears any previous search results
         $('#results').fadeOut();
         $("#clearBtn").show();
         
@@ -51,6 +53,7 @@ $(document).ready(function () {
             alert("Please enter a location");
             return false;
         }
+         $(".jumbotron").fadeOut();
         var pattern = $("#searchTerm").val();
         var url = search_url(pattern);
         $.ajax({
@@ -81,6 +84,7 @@ $(document).ready(function () {
     $("#clearBtn").on("click", function () {
         $("#clearBtn").fadeOut();
         $("#results").fadeOut();
+        $(".jumbotron").fadeIn();
 
     })
 });
