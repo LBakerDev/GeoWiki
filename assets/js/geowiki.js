@@ -11,12 +11,13 @@ function search_url(pattern) {
 $(document).ready(function () {
    // var area1;
     $("#clearBtn").hide();
+    $("body").removeClass("background");
 
     //find users current location
     $("#btn1").on("click", function (e) {
         //e.preventDefault();
         $(".jumbotron").fadeOut();
-        $("#searchTerm").val("")
+        $("body").addClass("background");
         //clears any previous search results
         $('#results').fadeOut();
         $("#clearBtn").show();
@@ -37,6 +38,7 @@ $(document).ready(function () {
                  "</h2><p>" + data[2][i] + "</p></a></div></div>");
             }
             $("#results").html(resultElement);
+            $("#searchTerm").val("");
             $("#results").fadeIn();
             
             },
@@ -72,7 +74,8 @@ $(document).ready(function () {
                  "</h2><p>" + data[2][i] + "</p></a></div></div>");
             }
             $("#results").html(resultElement);
-            $("#results").fadeIn();            
+            $("#results").fadeIn();
+            $("body").addClass("background");            
             },
             error: function (errorMessage) {
             }
@@ -85,6 +88,7 @@ $(document).ready(function () {
         $("#clearBtn").fadeOut();
         $("#results").fadeOut();
         $(".jumbotron").fadeIn();
+        $("body").removeClass("background");
 
     })
 
@@ -92,5 +96,8 @@ $(document).ready(function () {
         $("#results").fadeOut();
         $(".jumbotron").fadeIn();
         $("#searchTerm").val("")
+        $("body").removeClass("background");
+
+        
     })
 });

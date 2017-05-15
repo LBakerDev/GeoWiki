@@ -1,18 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
 .jumbotron{
     text-align: center;
     margin-top: -95px;
-    background-color: #1C25B2;
+    /*background-color: #181fff;*/
     padding-top: 1px;
     color: white;
 }
 
 body{
     text-rendering: optimizeLegibility;
-    font-family: futura;
+    /*font-family: futura;*/
+}
+
+.background {
+    background-color: #757F9A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    margin-top: -23px
+}
 
+img{
+    border-radius: 3px;
+}
+
+.openTxt{
+    position: absolute;
+    top: -41px;
+    margin-left: auto;
+    margin-right: auto;
+    left:0;
+    right:0;
+    color: black;
+}
 
 .active{
     text-align: left;
@@ -33,6 +61,7 @@ body{
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
     color: #fff;
     background-color: #7f7e86;
+
 }
 
 .navbar-default{
@@ -48,7 +77,7 @@ body{
 }
 
 .container-fluid{
-    background-color: #7f7e86;
+    background-color: black;
 }
 
 .container{
@@ -76,7 +105,7 @@ p{
 
 #p2{
     margin-bottom: 20px;
-    margin-top: -73px;
+    margin-top: -129px;
     padding-bottom: 40px;
 }
 
@@ -158,5 +187,16 @@ a { color: inherit;
         display: none
     }
 
+}
+
+@media screen and (max-width: 770px) {
+    .openTxt {
+        top: -112px
+    }
+
+    .openTxt p {
+        display:none
+
+    }
 }
 

@@ -10,17 +10,13 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
 </head>
 
-<body>
+<body class="background">
   <!--Nav bar creation-->
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
         <span id="home"><a class="navbar-brand" href="#">GeoWiki</a></span>
       </div>
-      <ul class="nav navbar-nav">
-        <!--<li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>-->
-      </ul>
       <img class="img-responsive" src="assets/css/images/sitelogo.png" alt="Site Logo">
     </div>
   </nav>
@@ -28,21 +24,23 @@
   <!--Header using jumbotron-->
   <header class="jumbotron">
     <div class="container">
-    <h1>GeoWiki</h1>
-    <p>The app that lets you learn interesting information about where you are or 
-      where you want to go. 
-    </p>
+      <img class="img-fluid" src="assets/css/images/mountains.jpg" alt="Some Mountains">
+      <div class="container openTxt">
+        <h1>GeoWiki</h1>
+        <p>The app that lets you learn interesting information about where you are or where you want to go.</p>
+      </div>
     </div>
   </header>
 
   <!--Search portion-->
   <div class="container controls">
-    <div id="p2"><p>Click below to find interesting information about your current location.</p>
-    <button id="btn1">Click here</button>
+    <div id="p2">
+      <p>Click below to find interesting information about your current location.</p>
+      <button id="btn1">Click here</button>
     </div>
     <div id="secondChoice">
       <h3>OR...</h3>
-      <h4>Somewhere else...</h4>
+      <h4>Where do you want to go?</h4>
     </div>
 
     <!--Form for user entry-->
@@ -66,8 +64,8 @@
     <div id='results'>
     </div>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-  <script type="text/javascript" src="assets/js/geowiki.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="assets/js/geowiki.js"></script>
 </body>
 
 </html>
