@@ -85,6 +85,7 @@ $(document).ready(function () {
 
     //clear results and remove clear button
     $("#clearBtn").on("click", function () {
+        
         $("#clearBtn").fadeOut();
         $("#results").fadeOut();
         $(".jumbotron").fadeIn();
