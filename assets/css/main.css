@@ -4,10 +4,11 @@
 
 .jumbotron{
     text-align: center;
-    margin-top: 55px;
+    margin-top: 0px;
     padding-top: 1px;
-    color: black;
-    background-color: transparent;
+    color:white;
+    background-color: black;
+    height: 212px;
 }
 
 body { 
@@ -16,17 +17,9 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    font-family: Raleway;
 }
 
-/*body{
-    
-    background-image: url('../css/images/palmtrees.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: raleway;
-    background-position: fixed;
-    
-}*/
 
 /*.background {
     background-color: #757F9A;  /* fallback for old browsers */
