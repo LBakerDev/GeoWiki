@@ -4,21 +4,36 @@
 
 .jumbotron{
     text-align: center;
-    margin-top: -95px;
+    margin-top: 55px;
     padding-top: 1px;
-    color: white;
+    color: black;
+    background-color: transparent;
 }
 
-body{
-    text-rendering: optimizeLegibility;
+body { 
+    background: url('../css/images/mountains.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-.background {
+/*body{
+    
+    background-image: url('../css/images/palmtrees.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: raleway;
+    background-position: fixed;
+    
+}*/
+
+/*.background {
     background-color: #757F9A;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/*background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
+/*background: linear-gradient(to right, #D7DDE8, #757F9A);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
 
-}
+}*/
 
 .img-fluid {
     max-width: 100%;
@@ -85,14 +100,9 @@ img{
     margin-left: auto;
     margin: 0 auto;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 250px;
     padding-bottom: 15px;
 }
-
-.container.controls {
-     border-bottom: 2px solid gray;
-     border-radius: 10px;
-} 
 
 p{
     font-size: 25px;
