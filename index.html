@@ -5,26 +5,26 @@
   <title>Geo Wiki</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
   <link href="assets/css/main.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/css/mdb.min.css">
 </head>
 
 <body class="background">
   
 
   <!--Header using jumbotron-->
-  <div class="jumbotron">
-        <h1>GeoWiki</h1>
-        <p>The app that lets you learn interesting information about where you are and where you want to go.</p>
+  <div class="jumbotron jumboStyle">
+        <h1 class="display-4">Geo<span>Wiki</span></h1>
+        <p class="lead">The app that lets you learn interesting information about where you are and where you want to go.</p>
   </div>
   
-
-  <!--Search portion-->
+<!--Search portion-->
   <div class="container controls">
     <div id="p2">
       <p>Click below to find interesting information about your current location.</p>
-      <button id="btn1">Click here</button>
+      <button class="btn btn-primary">Click here</button>
     </div>
 
     <!--Form for user entry-->
@@ -35,13 +35,13 @@
         </div>
         <div class="form-group">
           <label for="inputSearch" class="sr-only"></label>
-          <input type="text" class="form-control" id="searchTerm" name="city" placeholder="Search Here...">
+          <input type="text" class="form-control" id="searchTerm" name="city" placeholder="  Search Here">
         </div>
-        <button id='proceedBtn' class="btn btn-default" type=''>
+        <button id='proceedBtn' class="btn btn-primary" type=''>
           <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
         </button>
-        <button id='clearBtn' class="btn btn-default">
-          <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+        <button id='clearBtn' class="btn btn-primary">
+          <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
         </button>
       </form>
     </div>
@@ -50,6 +50,7 @@
 
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="assets/js/geowiki.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/js/mdb.min.js"></script>
 </body>
 
 </html>

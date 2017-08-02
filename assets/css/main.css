@@ -2,13 +2,17 @@
     box-sizing: border-box;
 }
 
-.jumbotron{
+.jumboStyle{
     text-align: center;
     margin-top: 0px;
     padding-top: 1px;
-    color:white;
-    background-color: black;
-    height: 212px;
+    color: black;
+    background-color: #1daee2 !important;
+    height: 240px;
+}
+
+span{
+    color: white;
 }
 
 body { 
@@ -19,14 +23,6 @@ body {
     background-size: cover;
     font-family: Raleway;
 }
-
-
-/*.background {
-    background-color: #757F9A;  /* fallback for old browsers */
-/*background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
-/*background: linear-gradient(to right, #D7DDE8, #757F9A);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
-
-}*/
 
 .img-fluid {
     max-width: 100%;
@@ -50,35 +46,6 @@ img{
 
 .active{
     text-align: left;
-    color: white;
-}
-.navbar {
-    border: none!important;
-}
-
-.navbar-header{
-    margin-top:6px;
-}
-
-.navbar-default .navbar-nav>li>a {
-    color: #efecec;
-}
-
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: #fff;
-    background-color: #7f7e86;
-
-}
-
-.navbar-default{
-    height: 70px;
-}
-
-.navbar-brand{
-    font-size: 36px;
-}
-
-.navbar-default .navbar-brand{
     color: white;
 }
 
@@ -122,34 +89,10 @@ h1{
     font-size: 65px;
 }
 
-#btn1{
-  padding: 15px 25px;
-  font-size: 24px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: #58CC14;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-}
-
-#btn1:hover {
-    background: #ff5b19;
-    transition-property: background;
-    transition-duration: 0.5s;
-    transition-timing-function: linear;
-    }
-
 #secondChoice{
     margin-top: 10px;
 }
 
-#searchTerm:focus{ 
-    border: 3px solid #555;
-
-}
 
 #tweet {
     display: inline-grid;
@@ -166,7 +109,7 @@ a { color: inherit;
 .liResults {
   margin-top:1%;
   border-radius:25px;
-      min-height: 20px;
+    min-height: 20px;
     padding: 19px;
     margin-bottom: 20px;
     background-color: #ecf0f1;
@@ -200,6 +143,7 @@ a { color: inherit;
 
     }
 }
+
 
 
 

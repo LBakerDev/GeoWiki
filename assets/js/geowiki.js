@@ -14,7 +14,7 @@ $(document).ready(function () {
     $("body").removeClass("background");
 
     //find users current location
-    $("#btn1").on("click", function (e) {
+    $(".btn-primary").on("click", function (e) {
         //e.preventDefault();
         $(".jumbotron").fadeOut();
         $("body").addClass("background");
