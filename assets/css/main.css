@@ -2,27 +2,41 @@
     box-sizing: border-box;
 }
 
+.blackDiv{
+    height: 100px;
+    background-color: black;
+}
+
+#brand {
+    color: #1daee2 !important;
+    margin: 0;
+    padding: 1rem;
+}
+
 .jumboStyle{
     text-align: center;
     margin-top: 0px;
     padding-top: 1px;
     color: black;
     background-color: #1daee2 !important;
-    height: 240px;
+    height: 300px;
 }
 
 span{
     color: white;
+    font-weight: 400;
+    
 }
 
-body { 
-    background: url('../css/images/mountains.jpg') no-repeat center center fixed; 
+ body { 
+     background: url('../css/images/mountains.jpg') no-repeat center center fixed;  
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     font-family: Raleway;
-}
+} 
+
 
 .img-fluid {
     max-width: 100%;
@@ -86,7 +100,7 @@ p{
 }
 
 h1{
-    font-size: 65px;
+    font-size: 75px;
 }
 
 #secondChoice{
