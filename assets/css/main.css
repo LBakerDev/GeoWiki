@@ -2,15 +2,22 @@
     box-sizing: border-box;
 }
 
+.overlay{
+    width: 100%;
+     height: 100vh; 
+    background-color: rgba(0,0,0,0.5)
+}
+
 .blackDiv{
     height: 100px;
     background-color: black;
 }
 
 #brand {
-    color: #1daee2 !important;
+    color: #2196f3 !important;
     margin: 0;
     padding: 1rem;
+    font-family: raleway
 }
 
 .jumboStyle{
@@ -18,8 +25,9 @@
     margin-top: 0px;
     padding-top: 1px;
     color: black;
-    background-color: #1daee2 !important;
+    background-color:#2196F3 !important;
     height: 300px;
+    font-family: raleway
 }
 
 span{
@@ -29,10 +37,9 @@ span{
 }
 
  body { 
-     background: url('../css/images/mountains.jpg') no-repeat center center fixed;  
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+   
+    background: url('../css/images/mountains.jpg') no-repeat center center fixed;  
+    /* height: 100vh; */
     background-size: cover;
     font-family: Raleway;
 } 
@@ -89,6 +96,11 @@ p{
     margin-bottom: 20px;
     margin-top: -129px;
     padding-bottom: 40px;
+    color: white;
+}
+
+input[type=text] {
+    color: white;
 }
 
 .img-responsive{
@@ -119,6 +131,10 @@ input {
 
 a { color: inherit; 
 } 
+
+.btn-primary{
+    background: #0d47a1 !important;
+}
 
 .liResults {
   margin-top:1%;
