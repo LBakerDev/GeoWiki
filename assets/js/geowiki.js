@@ -19,7 +19,7 @@ $(document).ready(function () {
         $(".jumbotron").fadeOut();
         $("body").addClass("background");
         //clears any previous search results
-        $('#results').fadeOut();
+        $('.results').fadeOut();
         $("#clearBtn").show();
         
         var url = search_url(area1);
@@ -34,12 +34,12 @@ $(document).ready(function () {
            
             for(var i=0; i<data[1].length; i++) {
 
-                resultElement = resultElement + ("<div><div class='liResults'><a target='_blank'href="+data[3][i]+"><h2>" + data[1][i]+
-                 "</h2><p>" + data[2][i] + "</p></a></div></div>");
+                resultElement = resultElement + ("<div class='liResults'><a target='_blank'href="+data[3][i]+"><h2>" + data[1][i]+
+                 "</h2><p>" + data[2][i] + "</p></a></div>");
             }
-            $("#results").html(resultElement);
+            $(".results").html(resultElement);
             $("#searchTerm").val("");
-            $("#results").fadeIn();
+            $(".results").fadeIn();
             
             },
             error: function (errorMessage) {
@@ -49,7 +49,7 @@ $(document).ready(function () {
     //find user location based on user entry
     $("#proceedBtn").on("click", function (e) {
         
-        $('#results').fadeOut();
+        $('.results').fadeOut();
         e.preventDefault();
         if($("#searchTerm").val()=="") {
             alert("Please enter a location");
@@ -70,11 +70,11 @@ $(document).ready(function () {
             for(var i=0; i<data[1].length; i++) {
              // $.each(results, function (results, data) {
                   console.log(data[i]);
-                resultElement = resultElement + ("<div><div class='liResults'><a target='_blank' href="+data[3][i]+"><h2>" + data[1][i]+
-                 "</h2><p>" + data[2][i] + "</p></a></div></div>");
+                resultElement = resultElement + ("<div class='liResults'><a target='_blank' href="+data[3][i]+"><h2>" + data[1][i]+
+                 "</h2><p>" + data[2][i] + "</p></a></div>");
             }
-            $("#results").html(resultElement);
-            $("#results").fadeIn();
+            $(".results").html(resultElement);
+            $(".results").fadeIn();
             $("body").addClass("background");            
             },
             error: function (errorMessage) {
@@ -87,14 +87,14 @@ $(document).ready(function () {
     $("#clearBtn").on("click", function () {
         
         $("#clearBtn").fadeOut();
-        $("#results").fadeOut();
+        $(".results").fadeOut();
         $(".jumbotron").fadeIn();
         $("body").removeClass("background");
 
     })
 
     $("#home").on("click", function () {
-        $("#results").fadeOut();
+        $(".results").fadeOut();
         $(".jumbotron").fadeIn();
         $("#searchTerm").val("")
         $("body").removeClass("background");
